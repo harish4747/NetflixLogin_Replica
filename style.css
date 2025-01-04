@@ -2,7 +2,7 @@ body {
   background: #000;
 }
 #parent {
-  background: url(/Netflix-cover.jpg);
+  background: url(Netflix-cover.jpg);
   background-repeat: no-repeat;
   font-family: sans-serif;
   height: 560px;
