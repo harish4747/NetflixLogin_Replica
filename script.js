@@ -88,7 +88,7 @@ document.getElementById("signin").onclick = () => {
     document.getElementById("password_error").style.display = "block";
   } else {
     userdetails.map((user) => {
-      if (user.email === $username || user.password === $username) {
+      if (user.email === $username || user.mobileno == $username) {
         if (user.password == $userpassword) {
           location.href = "https://www.netflix.com/login";
           alert("something went wrong");
