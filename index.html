@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/netflix_logo_icon_170919.png">
+</head>
+
+<body>
+    <div id="parent">
+        <div id="forbackground">
+            <div>
+                <img src="/netflix-logo-png-2564.png" alt="not found">
+            </div>
+            <div class="main">
+                <h1>Sign In</h1>
+                <div id="wrongpass_err_msg">
+                    <h4 id="uname_err">Incorrect password for</h4>
+                    <p>You can use a sign-in code, reset your password or try again.</p>
+                </div>
+                <div class="input" id="error">
+                    <label for="username">Email or mobile number</label>
+                    <input type="text" name="username" id="username" placeholder="">
+                </div>
+                <div id="username_error" class="">
+                    <p style="color: red; font-size: 12.5px; margin-left: 15px;">&#10006 Please enter a valid email
+                        address or phone number.</p>
+                </div>
+                <div id="password_inactive">
+                    <p>Message and data rates may apply</p>
+                </div>
+                <div class="input" id="error">
+                    <label for="userpassword">Password</label>
+                    <input type="password" name="userpassword" id="userpassword" placeholder="">
+                </div>
+                <div id="password_error" class="">
+                    <p style="color: red; font-size: 12.5px; margin-left: 15px;">&#10006 Your password must contain
+                        between 4 and 60 characters.</p>
+                </div>
+                <div>
+                    <button id="signin" class="btn" >Sign in</button>
+                </div>
+                <p id="or">OR</p>
+                <div>
+                    <button id="signincode" class="btn">Use a sign-in code</button>
+                </div>
+                <p id="forgotpassword"><a id="forgotlink" href="https://www.netflix.com/in/LoginHelp">Forgot password?</a></p>
+                <div class="rememberme">
+                    <input type="checkbox" name="rememberme" id="rememberme">
+                    <label for="rememberme"> Remember me</label>
+                </div class="fornew">
+                <p id="fornew">New to Netflix? <a href="https://www.netflix.com/in/">Sign up now.</a></p>
+                <div class="forfinal">
+                    <p id="forfinal" class="forfinal_class">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a
+                            href="#" id="learnmore">Learn more.</a></p>
+                    <p id="forfinal_policy" class="forfinal_class" style="display: none;">The information collected by Google reCAPTCHA is subject to the Google <a href="https://policies.google.com/privacy" target="_blank">Privacy
+                        Policy </a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA
+                        service and for general security purposes (it is not used for personalised advertising by
+                        Google).</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div>
+                <p>Questions? Call <a href="">000-800-919-1743</a></p>
+            </div>
+            <div id="footer_links">
+                <ul>
+                    <li><a href="https://help.netflix.com/en/node/412">FAQ</a></li>
+                    <li><a href="https://help.netflix.com/en">Help Center</a></li>
+                    <li><a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a></li>
+                    <li><a href="https://help.netflix.com/legal/privacy">Privacy</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                    <li><a href="https://help.netflix.com/en/node/134094">Corporate Information</a></li>
+                </ul>
+                <select name="language" id="language">
+                    <option value="english">English</option>
+                    <option value="hindhi">हिन्दी</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
