@@ -28,14 +28,15 @@ h1 {
   font-weight: 750;
 }
 
-#wrongpass_err_msg{
+#wrongpass_err_msg {
   background-color: rgb(213, 154, 44);
   padding: 1px 5px;
   border-radius: 5px;
   display: none;
 }
 
-#wrongpass_err_msg p,#wrongpass_err_msg h4{
+#wrongpass_err_msg p,
+#wrongpass_err_msg h4 {
   margin-left: 15px;
   font-size: 15px;
 }
@@ -78,28 +79,28 @@ h1 {
   border: 1px solid rgb(255, 0, 0);
 }
 
-#error_negative {  
+#error_negative {
   background-color: rgba(53, 72, 93, 0.5);
 }
 
 #username_error {
   display: none;
 }
-#password_error{
+#password_error {
   display: none;
 }
 
 .input:focus-within {
   outline: 2px solid white;
 }
-#password_inactive{
+#password_inactive {
   display: none;
 }
 
-#password_inactive p{
+#password_inactive p {
   margin-top: 20px;
-  color: rgb(114, 109, 109); 
-  font-size: 13px; 
+  color: rgb(114, 109, 109);
+  font-size: 13px;
   text-align: center;
 }
 
@@ -189,7 +190,8 @@ h1 {
   cursor: pointer;
 }
 
-#forfinal ,.forfinal_class {
+#forfinal,
+.forfinal_class {
   margin-top: 30px;
   text-align: left;
   color: rgb(140, 137, 137);
@@ -197,12 +199,14 @@ h1 {
   font-size: 12.5px;
 }
 
-#forfinal a, .forfinal_class a {
+#forfinal a,
+.forfinal_class a {
   text-decoration: none;
   color: rgb(53, 110, 254);
 }
 
-#forfinal a:hover,.forfinal_class a:hover {
+#forfinal a:hover,
+.forfinal_class a:hover {
   text-decoration: underline;
 }
 
@@ -248,6 +252,6 @@ a {
   border-radius: 4px;
   outline: 2px solid #000;
 }
-#language:hover{
-outline: 2px solid white;
+#language:hover {
+  outline: 2px solid white;
 }

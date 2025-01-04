@@ -3,15 +3,9 @@ let iterator = 0;
 let copyuserdetails = [];
 let userdetails = [
   {
-    uname: "Harish",
-    email: "harich4747@gmail.com",
-    mobileno: 9976814747,
-    password: "9976814747",
-  },
-  {
-    email: "jeeva4747@gmail.com",
-    mobileno: 9976814748,
-    password: "9976814748",
+    email: "Sample@gmail.com",
+    mobileno: 9876543210,
+    password: "sample@9876",
   },
 ];
 
@@ -66,7 +60,8 @@ document.getElementById("signincode").onclick = () => {
   } else {
     user_input[1].style.display = "block";
     user_input[1].id = "error";
-    user_input[0].id = "error";    
+    user_input[0].id = "error";
+    document.getElementById("wrongpass_err_msg").style.display = "none";
     document.getElementById("username_error").style.display = "none";
     document.getElementById("password_inactive").style.display = "none";
     document.getElementById("signin").innerText = "Sign in";
@@ -80,14 +75,20 @@ document.getElementById("signin").onclick = () => {
   let $username = document.getElementById("username").value;
   let $userpassword = document.getElementById("userpassword").value;
 
-  if ($username == "" && $userpassword == "") {
+  if ($username == "" && $userpassword == "" && iterator % 2 == 0) {
     user_input[0].id = "error_positive";
     user_input[1].id = "error_positive";
     document.getElementById("username_error").style.display = "block";
     document.getElementById("password_error").style.display = "block";
+  } else if ($username == "" && iterator % 2 == 0) {
+    user_input[0].id = "error_positive";
+    document.getElementById("username_error").style.display = "block";
+  } else if ($userpassword == "" && iterator % 2 == 0) {
+    user_input[1].id = "error_positive";
+    document.getElementById("password_error").style.display = "block";
   } else {
     userdetails.map((user) => {
-      if (user.email == $username || user.password == $username) {
+      if (user.email === $username || user.password === $username) {
         if (user.password == $userpassword) {
           location.href = "https://www.netflix.com/login";
           alert("something went wrong");
