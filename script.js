@@ -5,7 +5,7 @@ let userdetails = [
   {
     email: "Sample@gmail.com",
     mobileno: 9876543210,
-    password: "sample@9876",
+    password: "newpass@9876",
   },
 ];
 
@@ -92,9 +92,10 @@ document.getElementById("signin").onclick = () => {
         if (user.password == $userpassword) {
           location.href = "https://www.netflix.com/login";
           alert("something went wrong");
-        } else {
+        } else {          
           document.getElementById("wrongpass_err_msg").style.display = "block";
           document.getElementById("uname_err").innerText += ` ${$username}`;
+          alert("New Password is : 'newpass@9876'")
         }
       }
     });
